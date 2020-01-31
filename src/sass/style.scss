@@ -1,0 +1,27 @@
+* { margin: 0; padding: 0; }
+
+body { background-color: black; font-family: 'Lato'; color: white; }
+
+header { width: 100%; margin-top: 30px; position: fixed; z-index: 1000;
+    ul { display: flex; margin: 0 auto; justify-content: center; }
+    li { flex-direction: column; flex-wrap: nowrap; }
+}
+
+li { list-style: none; }
+
+aside { position: fixed; right: 20px; top: 50%; z-index: 1000;
+    button { margin-top: 10px; }
+}
+
+button { width: 100px; height: 50px; background-color: transparent; outline: 0; border: 1px solid white; color: white; margin-left: 10px; border-radius: 3px; 
+    &:hover, &.is-active { background-color: white; color: black; transition: .2s ease; }
+}
+
+article { height: auto; width: 100vw; }
+
+@for $i from 1 through 10 { 
+    .section-#{$i} { position: relative; height: 100vh; background-image: url("../images/#{$i}.jpg"); opacity: 0.75;
+    }
+}
+
+h1 { position: absolute; top: 50%; left: 50%; font-size: 56px; transform: translate(-50%, -50%); } 
