@@ -5,7 +5,7 @@ Scroll scripts with javascript ES6+ with OOP elements.
 ![ScrollOptions](screenshot-scroll.png)
 
 
-[Watch demo](https://haendzel.github.io/scrolloptions-js/) 📺 
+[Watch demo](https://haendzel.github.io/scrollOptions-js/) 📺 
 
 Add to buttons or links this line:
 ```bash
