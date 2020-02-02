@@ -4,10 +4,10 @@ Scroll scripts with javascript ES6+ with OOP elements.
 
 ![ScrollOptions](screenshot-scroll.png)
 
-Add to buttons or links this line:
 
 [Watch demo](https://haendzel.github.io/scrolloptions-js/) 📺 
 
+Add to buttons or links this line:
 ```bash
 
 onclick="goScroll('id')"
