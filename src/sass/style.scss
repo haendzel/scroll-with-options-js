@@ -14,10 +14,11 @@ aside { position: fixed; right: 20px; top: 50%; z-index: 1000;
 }
 
 button { width: 100px; height: 50px; background-color: transparent; outline: 0; border: 1px solid white; color: white; margin-left: 10px; border-radius: 3px; 
-    &:hover, &.is-active { background-color: white; color: black; transition: .2s ease; }
+    &:hover, &.is-active, &.is-selected { background-color: white; color: black; transition: .2s ease; }
 }
 
-article { height: auto; width: 100vw; }
+article { height: auto; width: 100vw; overflow-y: scroll;
+    scroll-behavior: smooth; }
 
 @for $i from 1 through 10 { 
     .section-#{$i} { position: relative; height: 100vh; background-image: url("../images/#{$i}.jpg"); opacity: 0.75;

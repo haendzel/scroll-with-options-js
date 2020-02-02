@@ -1,6 +1,6 @@
 {
   "name": "scrollOptions-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scroll options in Javascript ES6",
   "main": "gulpfile.js",
   "scripts": {

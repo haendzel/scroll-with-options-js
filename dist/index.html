@@ -5,30 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.min.css" class="rel">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,700,300italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <title>Scroll options in Javascript ES6</title>
 </head>
 <body>
     <header>
         <ul>
-            <li><button onclick='location.href="#1"' class="is-active">Section 1</button></li>
-            <li><button onclick='location.href="#2"'>Section 2</button></li>
-            <li><button onclick='location.href="#3"'>Section 3</button></li>
-            <li><button onclick='location.href="#4"'>Section 4</button></li>
-            <li><button onclick='location.href="#5"'>Section 5</button></li>
-            <li><button onclick='location.href="#6"'>Section 6</button></li>
-            <li><button onclick='location.href="#7"'>Section 7</button></li>
-            <li><button onclick='location.href="#8"'>Section 8</button></li>
-            <li><button onclick='location.href="#9"'>Section 9</button></li>
-            <li><button onclick='location.href="#10"'>Section 10</button></li>
+            <li><button onclick="goScroll('1')" class="is-active">Section 1</button></li>
+            <li><button onclick="goScroll('2')">Section 2</button></li>
+            <li><button onclick="goScroll('3')">Section 3</button></li>
+            <li><button onclick="goScroll('4')">Section 4</button></li>
+            <li><button onclick="goScroll('5')">Section 5</button></li>
+            <li><button onclick="goScroll('6')">Section 6</button></li>
+            <li><button onclick="goScroll('7')">Section 7</button></li>
+            <li><button onclick="goScroll('8')">Section 8</button></li>
+            <li><button onclick="goScroll('9')">Section 9</button></li>
+            <li><button onclick="goScroll('10')">Section 10</button></li>
         </ul>
     </header>
     <aside>
-        <nav>
+        <nav class="speed">
             <ul>
-                <li><button>Slow</button></li>
-                <li><button class="is-active">Medium</button></li>
-                <li><button>Fast</button></li>
+                <li><button onclick="speedVal(60)">Slow</button></li>
+                <li><button onclick="speedVal(40)" class="is-selected">Medium</button></li>
+                <li><button onclick="speedVal(10)">Fast</button></li>
             </ul>
         </nav>
     </aside>
