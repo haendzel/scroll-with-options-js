@@ -15,22 +15,22 @@ function goScroll(id){
 
 function animateScroll(to){
 	function checkPos(){
-		var pos= Math.round(document.body.scrollTop/10)*10;
+		let pos= Math.round(document.body.scrollTop/10)*10;
         window.scrollTo(0, pos);
         console.log(pos);
 		return pos;
 	}
-	var from = checkPos();
+	let from = checkPos();
 	if(from != to){
-		var sign;
+		let sign;
 		if(from<to){
 			sign = 1;
 		}else{
 			sign = -1;
 		}
-		var dif = (to-from)*sign;
-		var step = dif/window.speed;
-		var timer = setInterval(function(){
+		let dif = (to-from)*sign;
+		let step = dif/window.speed;
+		let timer = setInterval(function(){
 			from = (Math.round(from*100)/100) + (step*sign);
 			window.scrollTo(0, from);
 			if (Math.round(from) == to || (window.innerHeight + window.scrollY) >= document.body.offsetHeight){
